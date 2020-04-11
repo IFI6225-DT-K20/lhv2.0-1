@@ -2,6 +2,16 @@
 
 > Kasutajaliideste disain ja arendus
 
+# Õpetus kuidas tööle panna
+
+1. Klooni endale see repositoorium arvutisse
+2. Ava kaust programmiga: Visual Studio Code.
+3. Ava seal terminal ja veendu et oled kloonitud kaustas. 
+4. Kirjuta terminali järgnev käsklus -> npm install
+5. Kui eeldused on installitud kirjuta terminali -> npm run dev
+6. Ava localhost:3000 või jälgi enda terminalis mis porti ta kuulab ja ava see.
+7. Küsimuste ja probleemide korral kirjuta mulle treikris@tlu.ee 
+
 ## Build Setup
 
 ```bash
