@@ -1,3 +1,4 @@
+const nodeExternals = require('webpack-node-externals') // added to whitelist vue-slack carousel
 
 export default {
   mode: 'universal',
@@ -29,7 +30,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {mode: 'client', src: '~plugins/owl.js'} // Only works on client side
+   // {mode: 'client', src: '~plugins/vue-slick'},
+    {mode: 'client', src: '~plugins/owl'} // Only works on client side
   ],
   /*
   ** Nuxt.js dev-modules
@@ -51,6 +53,14 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            // whitelist: [/^vue-slick/]
+            whitelist: [/^owl/]
+          })
+        ]
+      }
     }
   }
 }

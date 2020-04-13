@@ -2,6 +2,6 @@
     "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true,
     "eslint.onIgnoredFiles": "warn",
-    "editor.tabSize": 4,
-    "editor.wordWrap": "bounded"
+    "editor.tabSize": 4
+    //"editor.wordWrap": "bounded"
 }
