@@ -2,7 +2,7 @@
 .container
 	Header
 	Navbar
-	OwlCarousel
+	Carousel
 	News
 	Footer
 </template>
@@ -11,7 +11,7 @@
 import Header from '~/components/Header.vue'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
-import OwlCarousel from '~/components/OwlCarousel.vue'
+import Carousel from '~/components/Carousel.vue'
 import News from '~/components/News.vue'
 
 export default {
@@ -19,7 +19,7 @@ export default {
 	Header,
 	Navbar,
 	Footer,
-	OwlCarousel,
+	Carousel,
 	News
   }
 }
