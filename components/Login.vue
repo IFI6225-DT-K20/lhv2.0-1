@@ -1,5 +1,5 @@
 <template lang="pug">
-#login
+#login.collapse.collapse.in.d-none.d-md-block
 	.form-inline
 		.form-group
 			.nav.login-pills
@@ -84,7 +84,7 @@
 		.form-inline.form-group{
 			display inline-block
 			margin-bottom 0
-			vertical-align middle
+			//vertical-align middle
 		}
 .nav
 	padding-left 0
@@ -101,5 +101,6 @@
 a
 	color #000
 	font-family 5
-
+.form-inline
+	text-align center
 </style>

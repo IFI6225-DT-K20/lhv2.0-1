@@ -1,5 +1,5 @@
 <template>
-  <v-carousel class="carousel">
+  <v-carousel>
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -33,6 +33,4 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-.carousel {
-    padding-bottom: 20px}
 </style>

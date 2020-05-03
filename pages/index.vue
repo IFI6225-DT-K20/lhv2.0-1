@@ -28,10 +28,10 @@ export default {
 }
 </script>
 <style lang="stylus">
-#wrapper
+/* #wrapper
 	min-height 100%
 	position relative
 	padding 0
 	width inherit 
-	overflow hidden
+	overflow hidden */
 </style>

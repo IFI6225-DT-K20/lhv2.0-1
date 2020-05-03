@@ -21,6 +21,7 @@ hidden-sm-down (hidden-sm hidden-xs) = d-none d-md-block
 hidden-md-down (hidden-md hidden-sm hidden-xs) = d-none d-lg-block
 hidden-lg-down = d-none d-xl-block
 hidden-xl-down (n/a 3.x) = d-none (same as hidden)
+
 Show/hide for breakpoint and up:
 
 hidden-xs-up = d-none (same as hidden)

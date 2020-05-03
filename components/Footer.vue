@@ -1,15 +1,14 @@
 <template lang="pug">
-#footer
+.footer
 	.container
 		.row
-			.col-xs-12.col-sm-3.col-md-3.footer-mobile-accordion(v-for="link in menuLinks")
+			.col-12.col-lg-3.footer-mobile-accordion(v-for="link in menuLinks")
 				.row
 				h3(v-text="link.label")
 				ul.list-unstyled
 					li(v-for="sublink in link.submenu")
 						a(v-bind:href="sublink.link") {{ sublink.label }}
-			.row
-				.col-xs-12.footer-social
+			.col-12.footer-social
 					a.social(href="https://www.instagram.com/lhvpank" target="_blank")
 						include ../assets/icons/insta.svg
 					a.social(href="https://www.facebook.com/LHVPank" target="_blank")
@@ -18,17 +17,17 @@
 						include ../assets/icons/youtube.svg
 					a.social(href="https://soundcloud.com/lhvpodcast" target="_blank")
 						include ../assets/icons/soundcloud.svg
-			.footer-app
-				p
-					a(href="https://apps.apple.com/app/apple-store/id728359509" class="footer-m-badge" target="_blank")
-						include ../assets/elements/app-store-et.svg
-					a(href="https://play.google.com/store/apps/details?id=ee.lhv.lhv&referrer=utm_source%3Dcorp%2520web%26utm_term%3Dmobilepage%26utm_campaign%3DMobilePage" class="footer-m-badge" target="_blank")
-						include ../assets/elements/google-play-et.svg
-			.row
-				.col-xs-12.col-md-10.col-md-offset-1.text-center
-					#disclaimer
-						.disclaimer
-							p(v-html="disclaimer")
+					.footer-app
+						p
+							a(href="https://apps.apple.com/app/apple-store/id728359509" class="footer-m-badge" target="_blank")
+								include ../assets/elements/app-store-et.svg
+							a(href="https://play.google.com/store/apps/details?id=ee.lhv.lhv&referrer=utm_source%3Dcorp%2520web%26utm_term%3Dmobilepage%26utm_campaign%3DMobilePage" class="footer-m-badge" target="_blank")
+								include ../assets/elements/google-play-et.svg
+		.row
+			.col-12.col-lg-10
+				#disclaimer
+					.disclaimer
+						p(v-html="disclaimer")
 
 </template>
 <script>
@@ -150,8 +149,8 @@ export default {
 }
 </script>
 <style lang="stylus">
-#footer
-	position relative
+.footer
+	position absolute
 	background #f8f8f8
 	font-size 12px
 	padding-top 40px
@@ -160,6 +159,13 @@ export default {
 	right 0
 	left 0
 	bottom 0
+	li
+		a
+			margin-top 0
+			margin-bottom 0
+			font-size 14px
+			line-height 26px
+			text-decoration none
 	h3
 		margin-top 0
 		margin-bottom 0
@@ -168,6 +174,14 @@ export default {
 		text-transform uppercase
 		color #909097
 		font-weight 500
+	a
+		color #000
+		font-weight 400
+		&:hover
+			cursor pointer
+			text-decoration none
+	p
+		font-size 12px
 	.social
 		padding 1px
 		opacity 1
@@ -176,16 +190,18 @@ export default {
 		display inline-block
 	.footer-app
 		display inline-block
-		float right 
+		float right
 	.footer-m-badge
 		margin 0 4px
 	.col-xs-12
 		width 100%
 	.disclaimer
-
+		color #000
+		margin-top 10px
 		a
 			text-decoration underline
-	
-
-	
+		p
+			color #000
+			line-height 18px
+			opacity .5
 </style>

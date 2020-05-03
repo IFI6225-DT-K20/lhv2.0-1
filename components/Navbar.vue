@@ -1,9 +1,21 @@
 <template lang="pug">
-.text-center
-    #main-menu.navbar.navbar-default.light-shadow.container-fluid.hidden-xs
-            ul.nav.navbar-nav(role="navigation")
-                li.dropdown
-                    a.dropdown-toggle(aria-expanded="false" data-toggle="dropdown" v-for="(link, i) in importantLinks" :key="i" href="link.href") {{link.text}}
+#main-menu.navbar.navbar-default.light-shadow.container-fluid.d-none.d-md-block
+    .text-center
+        ul.nav.navbar-nav(role="navigation")
+            li.dropdown
+                a.dropdown-toggle(aria-expanded="true" data-toggle="dropdown" v-for="(link, i) in importantLinks" :key="i") {{link.text}}
+                .dropdown-menu
+                    .container
+                        .menu-table.col-md-10.col-md-offset-1
+                            table
+                                tbody
+                                    tr
+                                        td(style="width:25%")
+                                            h3 Tule kliendiks
+
+
+
+
 </template>
 <script>
 export default {
@@ -13,7 +25,7 @@ export default {
         importantLinks: [
             {
             text: 'IGAPÄEVAPANGANDUS',
-            href: 'https://vuetifyjs.com',
+            href: 'et/igapäevapangandus',
             },
             {
             text: 'RAHA KASVATAMINE',
@@ -37,10 +49,13 @@ export default {
 }
 </script>
 <style lang="stylus">
-#main-menu
-    z-index: 101;
-.navbar
-    line-height: 12px;
+.navbar .navbar-nav
+        line-height 14px
+        float none
+.navbar-nav
+    li
+        a
+            line-height 20px
 .navbar-default
     padding-left 0
     padding-right 0
@@ -48,6 +63,18 @@ export default {
     background #f2f2f3
     border none 
     border-radius 0
+    .dropdown
+        position static
+        .dropdown-menu
+            margin-top 15px
+            padding-top 20px
+            left 0
+            right 0
+            background none 
+            border 0
+            box-shadow none
 .light-shadow
     box-shadow 0 1px 2px rgba(0,0,0,0.1)
+#main-menu .navbar-nav
+    display inline-block
 </style>
