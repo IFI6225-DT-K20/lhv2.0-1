@@ -150,7 +150,7 @@ export default {
 </script>
 <style lang="stylus">
 .footer
-	position relative
+	position absolute
 	background #f8f8f8
 	font-size 12px
 	padding-top 40px

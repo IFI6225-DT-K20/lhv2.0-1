@@ -24,6 +24,7 @@
 	background #f4f4f4
 	border-bottom 1px solid rgba(255,255,255,0.9)
 	.login-pills
+		margin-left 900px // ära muuta et oleks keskel
 		position relative
 		margin-top 20px
 		margin-bottom 20px
