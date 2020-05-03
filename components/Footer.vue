@@ -31,7 +31,6 @@
 							p(v-html="disclaimer")
 
 </template>
-</template>
 <script>
 export default {
   name: 'Links',
@@ -152,7 +151,7 @@ export default {
 </script>
 <style lang="stylus">
 #footer
-	position absolute
+	position relative
 	background #f8f8f8
 	font-size 12px
 	padding-top 40px

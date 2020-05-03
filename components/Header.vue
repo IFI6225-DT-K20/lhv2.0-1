@@ -1,7 +1,7 @@
 <template lang="pug">
-.corp-nav.container-fluid(id="corp-nav")
-    .router-view
-        .row
+#corp-nav.corp-nav.container-fluid
+    .row
+        .router-view
             .container
                 .row
                     .col-xs-12-col-lg-10.col-lg-offset-1
@@ -15,7 +15,7 @@
                             a.corp(href="https://investor.lhv.ee/et/") Investor
                         .pull-right
                             a.hidden-xs.language(id="open-account" href="https://www.lhv.ee/registration/cob/index.cfm?l3=et") Ava Konto
-                            a.language.hidden-xs.btn.btn-dark(id="login-toggle" href="javascript:void(0)" aria-expanded="false" target="_blank") Sisene
+                            a.language.hidden-xs(id="login-toggle" href="javascript:void(0)" aria-expanded="false" target="_blank") Sisene
                             a.hidden-xs.language.set-language(href="/en" data-language="en") en
                             a.hidden-xs.language.set-language(href="/ru" data-language="ru") ru
 </template>
@@ -53,10 +53,10 @@
     padding-left 15px
     margin-right auto
     margin-left auto
-.row
-    display block
-    margin-right -15px
-    margin-left -15px
+    .row
+        display block
+        margin-right -15px
+        margin-left -15px
 .pull-left
     float left 
 .pull-right

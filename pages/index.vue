@@ -1,6 +1,7 @@
 <template lang="pug">
-.container
+div
 	Header
+	Login
 	Navbar
 	Carousel
 	News
@@ -9,6 +10,7 @@
 
 <script>
 import Header from '~/components/Header.vue'
+import Login from '~/components/Login.vue'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 import Carousel from '~/components/Carousel.vue'
@@ -20,7 +22,11 @@ export default {
 	Navbar,
 	Footer,
 	Carousel,
-	News
+	News,
+	Login
   }
 }
 </script>
+<style lang="stylus">
+	
+</style>
