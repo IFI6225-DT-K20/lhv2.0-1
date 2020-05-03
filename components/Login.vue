@@ -1,6 +1,6 @@
 <template lang="pug">
 #login
-	.form-inline.text-center
+	.form-inline
 		.form-group
 			.nav.login-pills
 				li
@@ -27,7 +27,6 @@
 		position relative
 		margin-top 20px
 		margin-bottom 20px
-		text-align center
 		z-index 1
 		li:first-child
 			border-left 1px solid #c2c2c5;

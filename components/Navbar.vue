@@ -1,9 +1,9 @@
 <template lang="pug">
-nav.navbar.navbar-default.light-shadow.container-fluid.hidden-xs(id="main-menu")
-    .text-center
-        ul.nav.navbar-nav(role="navigation")
-            li.dropdown
-                a.dropdown-toggle(aria-expanded="false" data-toggle="dropdown" v-for="(link, i) in importantLinks" :key="i" href="link.href") {{link.text}}
+.text-center
+    #main-menu.navbar.navbar-default.light-shadow.container-fluid.hidden-xs
+            ul.nav.navbar-nav(role="navigation")
+                li.dropdown
+                    a.dropdown-toggle(aria-expanded="false" data-toggle="dropdown" v-for="(link, i) in importantLinks" :key="i" href="link.href") {{link.text}}
 </template>
 <script>
 export default {
@@ -36,3 +36,18 @@ export default {
     },
 }
 </script>
+<style lang="stylus">
+#main-menu
+    z-index: 101;
+.navbar
+    line-height: 12px;
+.navbar-default
+    padding-left 0
+    padding-right 0
+    margin-bottom 0
+    background #f2f2f3
+    border none 
+    border-radius 0
+.light-shadow
+    box-shadow 0 1px 2px rgba(0,0,0,0.1)
+</style>
