@@ -3,7 +3,7 @@
 > Kasutajaliideste disain ja arendus
 
 ### Viimane seis
-![Alt text](https://github.com/IFI6225-DT-K20/lhv2.0_Kristjan_Treimann/blob/master/current13.04.png)
+![Alt text](https://github.com/IFI6225-DT-K20/lhv2.0_Kristjan_Treimann/blob/master/04may.png)
 
 # Õpetus kuidas tööle panna
 
