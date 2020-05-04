@@ -1,6 +1,7 @@
 <template>
-	<carousel :autoplay="true">
-		<img src="../assets/elements/app-store-et.svg" alt="">
+	<carousel class="owl-carousel" :autoplay="true" :items="3" :loop="true">
+		<img src="../assets/images/headers/ariklient-bg.svg" alt="">
+    <img src="../assets/images/headers/tasuta-bg.svg" alt="">
 	</carousel>
 </template>
 <script> 

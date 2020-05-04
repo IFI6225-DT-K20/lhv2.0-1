@@ -33,6 +33,7 @@ export default {
 					id: '3',
 					heading: 'Kuula LHV Podcasti',
 					text: 'Siia tuleb uus list loopida',
+					text2: 'Siia tuleb uus list loopida',
 					link: 'Kuula kõiki',
 					href: 'https://www.lhv.ee/et/uudised/2020/15'
 				}
@@ -69,4 +70,5 @@ a.arrow
 	&:after
 		content ' →'
 		font-family 'Minion Pro', 'Arial, Helvetica, sans-serif'
+
 </style>

@@ -3,7 +3,6 @@ div
 	Header
 	Login
 	Navbar
-	Carousel
 	News
 	Footer
 </template>
@@ -13,7 +12,6 @@ import Header from '~/components/Header.vue'
 import Login from '~/components/Login.vue'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
-import Carousel from '~/components/Carousel.vue'
 import News from '~/components/News.vue'
 
 export default {
@@ -21,7 +19,6 @@ export default {
 	Header,
 	Navbar,
 	Footer,
-	Carousel,
 	News,
 	Login
   }
