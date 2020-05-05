@@ -45,7 +45,7 @@ export default {
 </script>
 <style lang="stylus">
 #content
-	padding-bottom: 433px
+	padding-bottom: 15px
 h3
 	font-weight 600
 	margin-top 50px
