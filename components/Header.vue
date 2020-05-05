@@ -33,11 +33,12 @@
     a
         color: #000
         text-decoration none
+        font-weight 600
         &:hover
             color #73737b
     a.active
         color #000
-        font-weight 600
+        font-weight 700
     a.logo
         padding-left 0
         padding-right 40px

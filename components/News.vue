@@ -52,14 +52,13 @@ h3
 	margin-bottom 20px
 	font-size 22px
 	line-height 32px
-	font-weight 600
 	color #000
 	cursor pointer
 p
 	font-size 16px
 	line-height 26px
 	color #000
-	font-weight 300
+	font-weight 400
 	cursor pointer
 a
 	cursor pointer

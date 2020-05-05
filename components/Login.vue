@@ -2,15 +2,15 @@
 #login.collapse.collapse.in.d-none.d-md-block
 	.form-inline
 		.form-group
-			.nav.login-pills
+			.nav.login-pills(@click="makeRed" id="mybutton")
 				li
-					a(href="#" target="_blank") ID-kaart
-					a(href="#" target="_blank") Mobiil-ID
+					a(href="#") ID-kaart
+					a(href="#") Mobiil-ID
 				li.active
-					a(href="#" target="_blank") Smart-ID
+					a(href="#") Smart-ID
 				li
-					a(href="#" target="_blank") PIN-kalkulaator
-					a(href="#" target="_blank") Salasõna
+					a(href="#") PIN-kalkulaator
+					a(href="#") Salasõna
 		.form-group
 			form(id="login-form" method="POST" action="/auth/login.cfm" autocomplete="off")
 				input.form-control(id="login-nickname" type="text" name="nickname" placeholder="Kasutajanimi" autofocus="")
@@ -19,6 +19,21 @@
 				input.form-control(type="hidden" name="l3" value="et")
 </div>
 </template>
+<script>
+/*eslint-env jquery*/
+export default {
+	name: 'Login',
+	data() {
+		return {
+		}
+	},
+	methods: {
+		makeRed() {
+			$("mybutton").addClass(".red")
+		}
+	},
+}
+</script>
 <style lang="stylus">
 #login
 	background #f4f4f4
@@ -30,6 +45,7 @@
 		margin-top 20px
 		margin-bottom 20px
 		z-index 1
+
 		li:first-child
 			border-left 1px solid #c2c2c5;
 			border-top-left-radius 4px;
@@ -47,12 +63,16 @@
 			.active
 				padding 0
 				z-index 2
+				background-color: red
+				a
+					background-color: #c2c2c5
+					font-size 50px
 			a
 				padding 0 12px
 				font-size 12px
 				line-height 30px
 				text-decoration none
-				font-weight 400
+				font-weight 600
 				background-color inherit
 				border none 
 				border-radius 0
@@ -105,4 +125,6 @@ a
 	font-family 5
 .form-inline
 	text-align center
+.red
+	border 1px solid red
 </style>
