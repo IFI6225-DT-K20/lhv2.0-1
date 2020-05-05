@@ -33,7 +33,7 @@
     a
         color: #000
         text-decoration none
-        font-weight 600
+        font-weight 400
         &:hover
             color #73737b
     a.active

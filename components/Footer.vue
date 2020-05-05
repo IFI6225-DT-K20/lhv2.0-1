@@ -63,7 +63,7 @@ export default {
               label: 'Privaatpangandus'
             },
             {
-              label: 'Ava konto'
+              label: 'Ava konto  →'
             }
           ]
         },
@@ -173,7 +173,7 @@ export default {
 		line-height 26px
 		text-transform uppercase
 		color #909097
-		font-weight 500
+		font-weight 600
 	a
 		color #000
 		font-weight 400

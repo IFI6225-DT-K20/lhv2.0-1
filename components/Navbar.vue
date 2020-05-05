@@ -2,7 +2,7 @@
 .navbar.navbar-default.light-shadow.container-fluid.d-none.d-md-block.text-center
     ul.navbar-nav(role="navigation")
         li
-            a.dropdown-toggle(aria-expanded="true" data-toggle="dropdown" v-for="(link, i) in importantLinks" :key="i") {{link.text}}
+            a.navs.dropdown-toggle(aria-expanded="true" data-toggle="dropdown" v-for="(link, i) in importantLinks" :key="i") {{link.text}}
 </template>
 <script>
 export default {
@@ -46,7 +46,8 @@ export default {
     background #f2f2f3
     border none 
     border-radius 0
-    a
+    .navs
+        padding-top 19px !important
         padding-bottom 17px
         font-size 13px  
         line-height 37px

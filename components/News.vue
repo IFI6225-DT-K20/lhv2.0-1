@@ -1,5 +1,5 @@
 <template lang="pug">
-#content(style="padding-bottom: 433px;")
+#content
 	.container
 		.row
 			.col-12.col-lg-10.offset-lg-1
@@ -45,9 +45,9 @@ export default {
 </script>
 <style lang="stylus">
 #content
-	background-color #fff
-
+	padding-bottom: 433px
 h3
+	font-weight 600
 	margin-top 50px
 	margin-bottom 20px
 	font-size 22px

@@ -3,6 +3,7 @@ div
 	Header
 	Login
 	Navbar
+	Slides
 	News
 	Footer
 </template>
@@ -13,6 +14,7 @@ import Login from '~/components/Login.vue'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 import News from '~/components/News.vue'
+import Slides from '~/components/Slides.vue'
 
 export default {
   components: {
@@ -20,15 +22,8 @@ export default {
 	Navbar,
 	Footer,
 	News,
-	Login
+	Login,
+	Slides
   }
 }
 </script>
-<style lang="stylus">
-/* #wrapper
-	min-height 100%
-	position relative
-	padding 0
-	width inherit 
-	overflow hidden */
-</style>

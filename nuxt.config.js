@@ -24,14 +24,16 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/styles/main.styl'
+    '~/assets/styles/main.styl',
+    'bootstrap/dist/css/bootstrap.css',
+    'bootstrap-vue/dist/bootstrap-vue.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
    // {mode: 'client', src: '~plugins/vue-slick'},
-    {mode: 'client', src: '~plugins/owl'} // Only works on client side
+    {mode: 'client', src: '~plugins/bootstrap.js'} // Only works on client side
   ],
   /*
   ** Nuxt.js dev-modules
@@ -52,15 +54,22 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-      if (ctx.isServer) {
-        config.externals = [
-          nodeExternals({
-            // whitelist: [/^vue-slick/]
-            whitelist: [/^owl/]
-          })
-        ]
+   extend(config) {
+    const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
+    vueLoader.options.transformAssetUrls = {
+      video: ['src', 'poster'],
+      source: 'src',
+      img: 'src',
+      image: 'xlink:href',
+      'b-avatar': 'src',
+      'b-img': 'src',
+      'b-img-lazy': ['src', 'blank-src'],
+      'b-card': 'img-src',
+      'b-card-img': 'src',
+      'b-card-img-lazy': ['src', 'blank-src'],
+      'b-carousel-slide': 'img-src',
+      'b-embed': 'src'
       }
-    }
+    }   
   }
 }
